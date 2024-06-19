@@ -1,0 +1,55 @@
+@font-face {
+    font-family: lexend;
+    src: url(../fonts/Lexend-VariableFont_wght.ttf);
+}
+*{
+    font-family: lexend;
+}
+.caratula{
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}.caratula img{
+    margin-top: 10px;
+}.caratula h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-color: rgb(0, 255, 0);
+}
+.caratula b{
+    background-color: rgb(106, 168, 79);
+}
+.contDatos{
+    text-align: center;
+}
+.caratula .datos{
+    font-size: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.aclaracion{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    border: 10px black solid;
+    text-align: center;
+    width: 510px;
+}
+.contAclaracion{
+    text-align: center;
+}
+.respuesta{
+    width: 1000px;
+    display: inline-block;
+    text-align: left;
+}.respuesta img{
+    border: 5px rosybrown solid;
+    float: left;
+    margin: 10px;
+}
+.contRespuesta{
+    text-align: center;
+}
