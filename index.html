@@ -252,15 +252,88 @@
                         </div>
                         <br><br><br>
                         <i>
-                        Yo las coloqué fuera adrede con el único objetivo de dar un<br>enfoque total a la asignación de datos y contemplarla con la<br>información completa del Poliformismo. Pero si las líneas están<br>fuera de los ciclos “hijos”, entonces, sólo se mostrarán los datos<br>de la primera persona ingresada para cada caso.
+                            Yo las coloqué fuera adrede con el único objetivo de dar un<br>enfoque total a la asignación
+                            de datos y contemplarla con la<br>información completa del Poliformismo. Pero si las líneas
+                            están<br>fuera de los ciclos “hijos”, entonces, sólo se mostrarán los datos<br>de la primera
+                            persona ingresada para cada caso.
                         </i>
                         <br><br>
                         <b><i class='bx bxs-error'></i> IMPORTANTÍSIMA ACLARACIÓN <i class='bx bxs-error'></i></b>
                     </div>
                 </div>
+                <br><br>
+                <b style="color: red;">1. DEFINICIÓN DEL VECTOR MADRE.</b>
+                <br>
+                Se declara el límite de valores que puede tomar el vector. Dicho de otra forma, se define con cuántas
+                clases hijas se va a tratar. En este caso son dos: clase Ghoul y clase Investigador
+                <br><br>
+                <b style="color: red;">2. ASIGNACIÓN DE CADA CLASE HIJA AL VECTOR MADRE.</b>
+                <br>
+                En la primera asignación, le estamos diciendo que, todos los valores que pertenezcan a la clase hija
+                <b>Ghoul</b>, van a ser asignados a esa posición de memoria <b>vectorPersona[0]</b>.
+                <br>
+                Lo mismo ocurre en la segunda asignación; le estamos diciendo que, todos los valores que pertenezcan a
+                la clase hija <b>Investigador</b>, van a ser asignados a esa posición de memoria
+                <b>vectorPersona[1]</b>.
+                <br>
+                Esta es la parte fundamental del polimorfismo, ya que, en este ejemplo, es donde se <i>firma</i>
+                explícitamente.
+                <br><br>
+                <b style="color: red;">3. RECORRE LOS VALORES DEL VECTOR MADRE.</b>
+                <br>
+                Si está todo correctamente asignado, entonces en este punto, el primer valor de <b>i</b> debe ser
+                <b>0</b>, asignado a la clase hija Ghoul. Lo que hace que el <b>ciclo for</b> recorra la primera
+                posición de memoria hasta que esta tome como último valor el <b>1</b>, asignado a la clase hija
+                Investigador.
+                <br>
+                Al haber definido como límite de clases hijas a tratar <b>[2]</b>, se pondrá como límite <b>&lt;2</b>
+                para que no supere dicho valor.
+                <br><br>
+                <b style="color: red;">4. RECORRE LOS VALORES DEL VECTOR MADRE.
+                    <br>
+                    #Primera vuelta</b>
+                <br>
+                <span class="textoCentrado">
+                    Para lo cual nosotros, algorítmicamente, le preguntamos “<b><i>¿Corresponde esta posición de memoria
+                            a una instancia de la clase hija Ghoul?</i></b>”.
+                    <br>
+                    Al haber definido previamente <i class='bx bx-right-arrow-alt'></i>'<b><i>vectorPersona[<span
+                                style="color: rgb(153, 0, 255);">0</span>] = <span
+                                style="color: rgb(153, 0, 255);">new</span> <span style="color: red;">Ghoul</i></b>', la
+                    respuesta será afirmativa siendo la primera vez que recorre el vector.
+                    <br>
+                    Pero el código a ejecutar sigue, y la siguiente cuestión es “<b><i>¿Corresponde esta posición de
+                            memoria a una instancia de la clase hija Investigador?</i></b>”.
+                    <br>
+                    Si se recuerda bien, previamente definí '<b><i>vectorPersona[<span
+                                style="color: rgb(153, 0, 255);">1</span>] = <span
+                                style="color: rgb(153, 0, 255);">new</span> <span
+                                style="color: red;">Investigador</i></b>', por lo que la respuesta será negativa, dado
+                    que el valor de <b>i = 0</b>.
+                </span>
+                <br>
+                <b style="color: red;">#Segunda vuelta</b>
+                <br>
+                <span class="textoCentrado">
+                    Volverá a preguntar si corresponde o no a una instancia de Ghoul. Siendo en este caso negativa,
+                    puesto que el valor de i ahora es 1.
+                    <br>
+                    Entonces, al llegar al último tramo del código, tocará comprobar si esta posición de memoria que se
+                    está recorriendo es o no perteneciente a una clase hija Investigador. Para lo que en este caso, la
+                    respuesta será afirmativa.
+                </span>
+                <br><br>
+                <b style="color: red;">5. MUESTRA LOS VALORES DE CADA CLASE HIJA.</b>
+                <br>
+                Declarando una variable <b>j</b>, recorremos el vector de cada clase hija.
+                Asignamos cada valor que va tomando esa variable, a cada posición de memoria que recorre de cada vector
+                de cada una de las clases hijas.
+                <b>NG</b> y <b>NI</b> son dos variables globales que definen, respectivamente, el límite de personas
+                para cada vector <b>Ghoul e <b>Investigador</b>.
             </div>
         </div>
     </div>
+    <hr width="1100px">
 </body>
 
 </html>
