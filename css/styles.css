@@ -114,4 +114,20 @@ p {
     display: block;
     margin: 10px auto;
 }
+.bxs-error{
+    color: yellow;
+    font-size: 20px;
+    background-color: black;
+}
+.contRespuesta:nth-child(14) .respuesta .bx-right-arrow-alt{
+    background-color: white;
+}.contRespuesta:nth-child(14) .datos .contDatos .datos {
+    float: left;
+}.contRespuesta:nth-child(14) .datos .contDatos .datos li:nth-child(1){
+    float: left;
+}.contRespuesta:nth-child(14) .datos .contDatos .datos li:nth-child(2){
+    margin-top: 25px;
+}.contRespuesta:nth-child(14) .datos .contDatos{
+    margin: auto 20px auto 250px;
+}
 /*-----------------------------*/
