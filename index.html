@@ -10,6 +10,63 @@
 </head>
 
 <body>
+    <ol>
+        <li>
+            <a href="#introduction">Caratula </a>
+        </li>
+        <li>
+            <a href="#habitat">Paradigma Orientado a Objetos, Atributos y Clase </a> 
+        </li>
+        <li>
+            <a href="#media">Objeto </a> 
+        </li>
+        <li>
+            <a href="#media">Métodos </a> 
+        </li>
+        <li>
+            <a href="#media">Herencia </a> 
+        </li>
+        <li>
+            <a href="#media">Objeto</a>
+            <ul>
+                <li>
+                    <a href="#">REPRESENTACIÓN GRÁFICA</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#media">Polimorfismo</a>
+            <ul>
+                <li>
+                    <a href="#">REPRESENTACIÓN GRÁFICA</a>
+                </li>
+                <li>
+                    <a href="#">IMPORTANTE ACLARACIÓN</a>
+                </li>
+                <li>
+                    <a href="#">EXPLICACIÓN CÓDIGO</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#media">Encapsulamiento</a>
+            <ul>
+                <li>
+                    <a href="#">Ejemplo en NetBeans</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#media">Abstracción</a>
+        </li>
+        <li>
+            <a href="#media">Asociación</a>
+        </li>
+        <li>
+            <a href="#media">Agregación</a>
+        </li>
+    </ol>    
+
     <hr width="1100px">
     <div class="caratula">
         <h1>
@@ -329,11 +386,106 @@
                 Asignamos cada valor que va tomando esa variable, a cada posición de memoria que recorre de cada vector
                 de cada una de las clases hijas.
                 <b>NG</b> y <b>NI</b> son dos variables globales que definen, respectivamente, el límite de personas
-                para cada vector <b>Ghoul e <b>Investigador</b>.
+                para cada vector <b>Ghoul e Investigador</b>.
             </div>
         </div>
+        <hr width="1100px">
+        <br>
+        <div class="contRespuesta">
+            <div class="respuesta">
+                <u><b>(8) Encapsulamiento:</b></u>
+                <br>&nbsp;&nbsp;Funciona como un delimitador de acceso para las clases y sus métodos.<br>
+                Con esto se puede definir qué tan “accesible” se quiere que sean.<br>
+                <img src="img/7.png" alt="claseAlumno" width="500px" height="150px" srcset="">
+                <br>
+                En <span style="color: red; background-color: black;"><b>PUBLIC</b></span>, cualquier entidad, dentro y fuera de la clase donde definí el tipo de acceso, va a poder acceder.
+                <br><br>
+                En <span style="color: yellow; background-color: black;"><b>PRIVATE</b></span>, cualquier entidad, sólo dentro de la clase donde definí el tipo de acceso (no fuera), va a poder acceder.
+                <br><br><br><br>
+                Ahora, si es <span style="color: rgb(5, 173, 237); background-color: black;"><b>PROTECTED</b></span>, va a incluir la característica del <span style="color: yellow; background-color: black;"><b>PRIVATE</b></span>, siendo accesible para aquellos elementos que se encuentren dentro de la propia clase y no fuera. Pero con el plus de que, si tiene clases Hijas, estas también van a poder acceder, por más que estén fuera. 
+                <br><br>
+                <br><b>Ejemplo sencillo utilizando la  interfaz de NetBeans:</b>
+                <br><br>
+                <div class="contImg">
+                    <img src="img/8.png" alt="objetosAlumno" width="650px" height="500px">
+                </div>
+                <br>
+                Partiendo del mismo ejemplo de antes de la clase madre Persona con sus clases hijas Ghoul e Investigador, se puede ver como Persona está en <span style="color: red; background-color: black;"><b>PUBLIC</b></span>. 
+                Pero, si lo cambiamos a <span style="color: yellow; background-color: black;"><b>PRIVATE</b></span> ocurre lo siguiente…
+                <br><br>
+                <div class="contImg">
+                    <img src="img/9.png" alt="objetosAlumno" width="500px" height="150px">
+                </div>
+                <br>
+                Sus clases Hijas ya no van a tener acceso a la clase Madre ni a sus métodos por encontrarse estas fuera. De hecho, ese subrayado amarillo en <span style="color: rgb(106, 168, 79);"><b>Persona</b></span> avisa que sus métodos nunca son utilizados ya que no hay nadie, con acceso, que pueda utilizarlos.
+                <br>
+                Por ello, en este caso particular, donde lo más importante entre estas clases es la vinculación entre ellas, lo mejor es delimitar esta clase Persona con un <span style="color: rgb(5, 173, 237); background-color: black;"><b>PROTECTED</b></span>.
+                <br><br>
+                <div class="contImg">
+                    <img src="img/10.png" alt="objetosAlumno" width="500px" height="150px">
+                </div>
+                <br>
+            </div>
+        </div>
+        <hr width="1100px">
+        <br>
+        <div class="contRespuesta">
+            <div class="respuesta">
+                <u><b>(6) Abstracción:</b></u>
+                <br>
+                Para entender bien este concepto, es necesario comprender que cuando se refiere a algo abstracto, hablando del mundo real, se refiere a algo que no está propiamente definido, que puede tomar muchas formas o interpretaciones.
+                <br><br>
+                De esta forma, una clase Abstracta va a ser una plantilla que va a servir como molde para otras clases. 
+                <br><br>
+                Como si tuviéramos una hoja en blanco con una carátula y varios espacios vacíos donde iría una firma, espacios para una foto, etc. Y que luego, se hagan varias <b>impresiones</b> de ese mismo <b>molde</b> en blanco y rellene los datos y todo lo demás únicamente en las impresiones, pero no en el molde, ya que no tendría sentido, porque necesito una <b>base de la que trabajar</b>. 
+                <br><br>
+                Claro que esta primera hoja con espacios en blancos sería la Clase Madre y el resto de copias a las que sí voy a rellenar serían las clases Hijas.
+                <br><br>
+                <img src="img/11.png" alt="claseAlumno" width="325px" height="325px" srcset="">
+                <br><br>
+                En este ejemplo, nuestra clase Abstracta sería <b>Figura</b>, habiendo varias interpretaciones para esta: figura circular, figura cuadrada, figura rectangular…
+                <br><br>
+                La clave está en definir en Figura aquellas características en común que tengan todas las propias figuras.
+                <br><br>
+                Cada una va a tener atributos y métodos en común, como <b>calcularArea</b>, todas las figuras van a tener un Área, pero cada una la va calcular de forma diferente. 
+                <br><br>
+                Por esto último se dice que la Abstracción define el “<b>ES/SER</b>” de una clase, mas no su “<b>CÓMO</b>”.
+            </div>
+        </div>
+        <hr width="1100px">
+        <br>
+        <div class="contRespuesta">
+            <div class="respuesta">
+                <u><b>(10) Asociación:</b></u>
+                <br>
+                Análogamente con el ejemplo de una Base De Datos, se puede considerar como la “tabla débil” entre dos tablas fuertes que sirve para asociar los datos de la misma que, independientemente pueden no tener mucho sentido, pero en conjunto pueden tener un significado. 
+                <br><br>
+                <div class="contImg">
+                    <img src="img/12.png" alt="objetosAlumno" width="500px" height="150px">
+                </div>
+                <br><br>
+                Esto sería similar a crear directamente una clase con ambos datos y vincularlos en la propia clase a partir de los objetos.
+                <br><br>
+            </div>
+        </div>
+        <hr width="1100px">
+        <div class="contRespuesta">
+            <div class="respuesta">
+                <u><b>(11) Agregación:</b></u>
+                <br>
+                Sencillamente, una clase <b>USA</b> un objeto de otra. Con el <b><i>USO</i></b> me refiero a poder, por ejemplo, declarar un vector dentro de una clase sin objetos y que las posiciones de memoria de este vector estén almacenadas con información de otra clase.
+                <br>
+                Para este ejemplo es fundamental definir cuántas clases van a ser agregadas dentro.
+                <br>
+                <img src="img/13.png" alt="objetosAlumno" width="500px" height="150px">
+                Así es, esto ya lo había mencionado anteriormente con el ejemplo del Polimorfismo.
+                <br>
+                En el ejemplo, la clase Persona, estoy creando un <b>vectorPersona</b> que agrega objetos de la clase <b>Persona</b>. Sin embargo, los objetos que almacenaremos serán de las clases Ghoul e Investigador. En este ejemplo, se denota que ambas clases no necesitan depender de esta relación para sobrevivir, así como sí lo necesita una de las otras características de la POO que es la <b>Composición</b>.
+                <br><br>
+            </div>
+        </div>
+        <hr width="1100px">
     </div>
-    <hr width="1100px">
 </body>
 
 </html>

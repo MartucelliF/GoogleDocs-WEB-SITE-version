@@ -135,3 +135,38 @@ p {
     margin: auto 20px 15px 60px;
 }
 /*-----------------------------*/
+
+/*-------------------*/
+/*(8)Encapsulamiento*/
+.contRespuesta:nth-child(17) .respuesta img:nth-child(5){
+    float: left;
+    margin: 10px 12px auto;
+}
+.contRespuesta:nth-child(17) .respuesta .contImg img:nth-child(1){
+    display: block;
+    margin: 10px auto;
+}
+/*-----------------------------*/
+
+/*-----------------------------*/
+/*(6)Abstracción*/
+.contRespuesta:nth-child(20) .respuesta img{
+    float: left;
+    margin: auto 10px auto auto;
+}
+/*-----------------------------*/
+
+/*---------------*/
+/*(10)Asociación*/
+.contRespuesta:nth-child(23) .respuesta .contImg img{
+    display: block;
+    margin: 10px auto;
+}
+/*-----------------------------*/
+/*---------------*/
+/*(11)Agregación*/
+.contRespuesta:nth-child(25) .respuesta img{
+    display: block;
+    margin: 10px auto;
+}
+/*-----------------------------*/
