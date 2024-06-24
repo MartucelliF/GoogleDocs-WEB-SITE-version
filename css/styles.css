@@ -47,14 +47,14 @@
     text-align: left;
 
 /*(1)Paradigma Orientado a Objetos, (4)Atributos y (3) Clase*/
-}.contRespuesta:nth-child(1) .respuesta img{
+}#ParadigmaOrientadoaObjetosAtributosyClase .contRespuesta:nth-child(1) .respuesta img{
     float: left;
     border: solid 2px green;
     margin: 10px;
 }
 /*-----------------------------*/
 /*(2)Objeto*/
-.contRespuesta:nth-child(5) .respuesta img{
+#Objeto .respuesta img{
     display: block;
     margin: 10px auto;
 }
@@ -89,7 +89,7 @@ p {
 
 /*-----------------------------*/
 /*(7)Herencia*/
-.contRespuesta:nth-child(11) .respuesta img{
+#Herencia .respuesta img{
     display: block;
     margin: 10px auto;
 }
@@ -100,17 +100,17 @@ p {
 
 /*-----------------------------*/
 /*(9)Polimorfismo*/
-.contRespuesta:nth-child(14) .contAclaracion:nth-of-type(1) .aclaracion{
+#Polimorfismo .contAclaracion:nth-of-type(1) .aclaracion{
     border-radius: 0%;
     border: 0px;
     color: black;
     background-color: yellow;
 }
-.contRespuesta:nth-child(14) .respuesta img{
+#Polimorfismo .respuesta img{
     display: block;
     margin: 10px auto;
 }
-.contRespuesta:nth-child(14) .respuesta img:nth-child(2){
+#Polimorfismo .respuesta img:nth-child(2){
     display: block;
     margin: 10px auto;
 }
@@ -119,17 +119,17 @@ p {
     font-size: 20px;
     background-color: black;
 }
-.contRespuesta:nth-child(14) .respuesta .bx-right-arrow-alt{
+#Polimorfismo .respuesta .bx-right-arrow-alt{
     background-color: white;
-}.contRespuesta:nth-child(14) .datos .contDatos .datos {
+}#Polimorfismo .datos .contDatos .datos {
     float: left;
-}.contRespuesta:nth-child(14) .datos .contDatos .datos li:nth-child(1){
+}#Polimorfismo .datos .contDatos .datos li:nth-child(1){
     float: left;
-}.contRespuesta:nth-child(14) .datos .contDatos .datos li:nth-child(2){
+}#Polimorfismo .datos .contDatos .datos li:nth-child(2){
     margin-top: 25px;
-}.contRespuesta:nth-child(14) .datos .contDatos{
+}#Polimorfismo .datos .contDatos{
     margin: auto 20px auto 250px;
-}.contRespuesta:nth-child(14) .respuesta .textoCentrado{
+}#Polimorfismo .respuesta .textoCentrado{
     margin-right: 30px;
     float: left;
     margin: auto 20px 15px 60px;
@@ -138,11 +138,11 @@ p {
 
 /*-------------------*/
 /*(8)Encapsulamiento*/
-.contRespuesta:nth-child(17) .respuesta img:nth-child(5){
+#Encapsulamiento .respuesta img:nth-child(5){
     float: left;
     margin: 10px 12px auto;
 }
-.contRespuesta:nth-child(17) .respuesta .contImg img:nth-child(1){
+#Encapsulamiento .respuesta .contImg img:nth-child(1){
     display: block;
     margin: 10px auto;
 }
@@ -150,7 +150,7 @@ p {
 
 /*-----------------------------*/
 /*(6)Abstracción*/
-.contRespuesta:nth-child(20) .respuesta img{
+#Abstraccion .respuesta img{
     float: left;
     margin: auto 10px auto auto;
 }
@@ -158,14 +158,14 @@ p {
 
 /*---------------*/
 /*(10)Asociación*/
-.contRespuesta:nth-child(23) .respuesta .contImg img{
+#Asociacion .respuesta .contImg img{
     display: block;
     margin: 10px auto;
 }
 /*-----------------------------*/
 /*---------------*/
 /*(11)Agregación*/
-.contRespuesta:nth-child(25) .respuesta img{
+#Agregacion .respuesta img{
     display: block;
     margin: 10px auto;
 }
